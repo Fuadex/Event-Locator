@@ -183,7 +183,7 @@ void userlistenedto(String user) {
   XML xml = null;
 
   try {
-    xml = loadXML("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&limit=100&api_key=1a86c869383e925dba95d2eb096bf2f2&user="+user); //loads a specific username xml file
+    xml = loadXML("http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&limit=100&api_key=GET_YOUR_OWN_API_BRO&user="+user); //loads a specific username xml file
   }
   catch(Exception e) {
   }
@@ -221,7 +221,7 @@ void userlistenedtolastweek(String user) { //This is the same code as the previo
   XML xml = null;
 
   try {
-    xml = loadXML("http://ws.audioscrobbler.com/2.0/?method=user.getWeeklyArtistChart&limit=100&api_key=1a86c869383e925dba95d2eb096bf2f2&user="+user);
+    xml = loadXML("http://ws.audioscrobbler.com/2.0/?method=user.getWeeklyArtistChart&limit=100&api_key=GET_YOUR_OWN_API_BRO&user="+user);
   }
   catch(Exception e) {
   }
@@ -257,7 +257,7 @@ String readXMLlastfm(String artist) { //That one will get the top tags of select
   XML xml = null;
 
   try {
-    xml = loadXML("http://ws.audioscrobbler.com/2.0/?method=artist.getTopTags&limit=200&api_key=1a86c869383e925dba95d2eb096bf2f2&artist="+artist);
+    xml = loadXML("http://ws.audioscrobbler.com/2.0/?method=artist.getTopTags&limit=200&api_key=GET_YOUR_OWN_API_BRO&artist="+artist);
   }
   catch(Exception e) {
   }
